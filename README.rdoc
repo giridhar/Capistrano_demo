@@ -1,28 +1,19 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+=== A demo app that shows how to run capistrano task's with RVM , Thin & Rails 4.2 
 
-* Ruby version
+==== Add the following in Gemfile
+    group :development do
+      gem 'capistrano-rails'
+      gem 'capistrano-thin'
+      gem 'capistrano-rvm'
+    end
+    
+==== Add the following in Capfile
 
-* System dependencies
+    require 'capistrano/rvm'
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    require 'capistrano/thin'
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.

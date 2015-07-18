@@ -33,9 +33,11 @@ gem 'thin'
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-gem 'capistrano-rails', group: :development
-gem 'capistrano-thin'
-gem 'capistrano-rvm'
+group :development do
+  gem 'capistrano-rails'
+  gem 'capistrano-thin'
+  gem 'capistrano-rvm'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

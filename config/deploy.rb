@@ -46,3 +46,9 @@ namespace :deploy do
   end
 
 end
+
+task :uptime do
+  on roles(:web) do
+    execute "uptime"
+  end
+end
