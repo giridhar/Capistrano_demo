@@ -4,9 +4,14 @@ require 'capistrano/setup'
 # Include default deployment tasks
 require 'capistrano/deploy'
 
+# When using rvm use this 
 require 'capistrano/rvm'
 
+# when using thin use this 
 require 'capistrano/thin'
+
+#when using puma use this 
+#require 'capistrano/puma'
 
 
 # Include tasks from other gems included in your Gemfile
